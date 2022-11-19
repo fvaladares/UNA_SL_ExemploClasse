@@ -6,6 +6,18 @@ public class Conta {
     private int agencia;
     private double saldo;
 
+    public Conta(int numeroConta, int agencia, int saldo) {
+        this.numeroConta = numeroConta;
+        this.agencia = agencia;
+        this.saldo = saldo;
+    }
+
+    public Conta() {
+        this.numeroConta = 0;
+        this.agencia = 0;
+        this.saldo = 0;
+    }
+
     public boolean setAgencia(int agencia) {
         if (agencia < 0) {
             return false;
